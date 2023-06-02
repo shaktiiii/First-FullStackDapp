@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first dApp</title>
+
+    <link rel="stylesheet" href="./index.css">
+
+
+    <!-- This helps us to connect with the ethers library without importing it in npm packages and the reason we do not use it is because it is really hard to fegure out what is happening in the modules -->
+     
+    
+    <script 
+        charset="UTF-8"
+        src="https://cdn.ethers.io/lib/ethers-5.7.umd.min.js"  
+        type="application/javascript">
+    </script> 
+
+    <script src="script.js"></script>
+
+</head>
+<body>
+
+    <div>
+        <h1>This is my Daap </h1>
+        <p>Here we can set and get the mood:</p>
+        <label for="mood">Input Mood: </label>
+        <input type="text" id="mood" />
+        <button onclick="getMood()">Get Mood</button>
+        <button onclick="setMood()">Set Mood</button>
+        <p id="showMood"> Please Set Your Mood</p>
+    </div>
+
+</body>
+
+</html>
